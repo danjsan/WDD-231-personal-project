@@ -86,6 +86,19 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Global navbar styling */
+
+.global-header {
+  background-color: var(--bs-black);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  fill: white;
+}
+
+
+
+
 /* Global styles */
 
 * {
