@@ -16,5 +16,19 @@ function parkInfoTemplate(info) {
   </p>`;
 }
 
+
 const info = document.querySelector(".info > a");
-disclaimer.href = parkData.url;
+info.href = parkData.url;
+
+document.querySelector("head > title").textContent = parkData.fullName;
+
+const imageHero = document.querySelector(".hero-banner > img");
+imageHero.scr = parkData.images[0].url;
+
+document.querySelector(".hero-banner_content").innerHTML = 
+  parkInfoTemplate(parkData);
+
+
+
+
+
